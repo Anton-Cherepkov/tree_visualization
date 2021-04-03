@@ -1,5 +1,5 @@
 # Tree visualization tool
-
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/168gb2nafgd3OglfJYfAA-7_0j573_Jjv?usp=sharing)
 
 ## Usage:
 ```
