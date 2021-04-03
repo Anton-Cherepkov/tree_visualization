@@ -104,6 +104,8 @@ def calculate_layered_tree_down_offsets(node):
 def save_figure(root, fpath, node_color, edge_color):
     fig, ax = plt.subplots(figsize=(12, 8))
     fig.patch.set_visible(False)
+    ax.set_xticks([])
+    ax.set_yticks([])
 
     def add_node_to_figure(node):
         ax.scatter(
