@@ -1,5 +1,6 @@
 from visualization.visualizer import visualize
 
+import os
 import argparse
 
 
@@ -22,5 +23,7 @@ if __name__ == "__main__":
         help='GraphML files')
     args = parser.parse_args()
     
-    for graph_fpath in args.graphs:
+    for i, graph_fpath in enumerate(args.graphs):
+        print(f"[{i + 1}/{len(args.graphs)}]\t{os.path.split(graph_fpath)[1]}")
         visualize(graph_fpath=graph_fpath, args=args)
+    print("Done")
