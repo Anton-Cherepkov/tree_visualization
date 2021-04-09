@@ -29,6 +29,9 @@ class TreeContours:
             self.right_contour_offsets_from_root[i] += offset
     
     def extend(self, node, offset):
+        if offset != 0:
+            raise NotImplementedError
+
         self.left_contour  = [node,] + self.left_contour
         self.right_contour = [node,] + self.right_contour
 
